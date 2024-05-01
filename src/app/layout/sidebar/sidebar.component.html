@@ -1,0 +1,28 @@
+<div class="sidebar-body" (click)="$event.stopPropagation()">
+    <div class="sidebar-brand" routerLink="home">
+        <div class="image-container">
+            <img src="/assets/shocked-man.jpg">
+        </div>
+    </div>
+
+    <div class="sidebar-profile">
+    </div>
+
+    <div class="sidebar-fixed-options ss-fc-muted-1">
+        <div class="sidebar-menu-item" (click)="onToggleTheme()">
+            <label><i class="bi bi-moon-fill"></i> Toggle Theme</label>
+        </div>
+    </div>
+
+    <label class="px-1 ss-fw-bold">Menu</label>
+    <div class="sidebar-menu ss-fc-muted-1">
+        <!-- <div *ngFor="let func of functionList" class="sidebar-menu-item" (click)="onFunctionSelected(func)">
+            <label><i [ngClass]="func.icon"></i> {{func.name}}</label>
+        </div> -->
+    </div>
+
+    <div class="brand-footer">
+        <!-- <img [src]="getBrandSMURL()" class="h-100"> -->
+        <p class="ss-fs-xsm ss-fw-light">Henru Developer<i class="bi bi-dot"></i>/></p>
+    </div>
+</div>
