@@ -2,14 +2,34 @@
     height: calc(100vh - 55px);
     position: relative;
     overflow: hidden;
+    width: 100%;
+}
+
+.text-content {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    // transform: translateX(-50%);
+    // text-align: center;
+    z-index: 10;
+    // make more space between the text letters
+    letter-spacing: 0.3rem;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+}
+
+.text-content h2 {
+    font-size: 1.5rem;
 }
 
 .shape-container {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 20%;
     transform: translateY(-50%);
-    width: 100%;
+    width: fit-content;
     height: 100%;
     opacity: 10%;
 }
@@ -20,17 +40,39 @@
     // invert the image color
     filter: invert(1);
     height: 100%;
-    position: relative; // Ensure the pseudo-element is positioned relative to this container
+}
 
-    &::after {
-        content: "aaaaaaaaaaaaaaa";
-        position: absolute;
-        z-index: 100000;
-        top: 0;
-        left: 0;
-        // bottom: 0;
-        // right: 50%; // Start from the middle of the container
-        // background: linear-gradient(to left, rgb(129, 86, 86), rgb(29, 12, 66)); // Adjust the color to match your page's background color
-        // pointer-events: none; // Prevent the pseudo-element from blocking interactions
+.shape-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 150%;
+    // bottom: 0;
+    // right: 50%; // Start from the middle of the container
+    background: linear-gradient(to right, var(--body-background-color), rgba(255, 255, 255, 0)); // Adjust the color to match your page's background color
+    // pointer-events: none; // Prevent the pseudo-element from blocking interactions
+}
+
+@media screen and (min-width: 700px) {
+    .shape-container {
+        left: 40%;
     }
+    
+}
+
+@media screen and (min-width: 1000px) {
+    .shape-container {
+        left: 50%;
+    }
+    
+}
+
+@media screen and (min-width: 1400px) {
+    .shape-container {
+        left: unset;
+        right: -20%;
+    }
+    
 }
