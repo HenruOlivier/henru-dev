@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './layout/header/header.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { AsyncPipe, NgClass } from '@angular/common';
-import { UitoolsService } from './services/uitools.service';
+import { UitoolsService } from './shared/services/uitools.service';
 
 @Component({
   selector: 'app-root',

@@ -191,8 +191,70 @@
 
 }
 
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/assets/fonts/ubuntuSansMono/UbuntuSansMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CustomFontBold';
+    src: url('/assets/fonts/ubuntuSansMono/UbuntuSansMono-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CustomFontItalic';
+    src: url('/assets/fonts/ubuntuSansMono/UbuntuSansMono-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'CustomFontBoldItalic';
+    src: url('/assets/fonts/ubuntuSansMono/UbuntuSansMono-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'CustomFontLight';
+    src: url('/assets/fonts/ubuntuSansMono/UbuntuSansMono-Medium.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CustomFontSemiBold';
+    src: url('/assets/fonts/ubuntuSansMono/UbuntuSansMono-SemiBold.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+.bold {
+    font-family: 'CustomFontBold', sans-serif;
+}
+
+.italic {
+    font-family: 'CustomFontItalic', sans-serif;
+}
+
+.bold-italic {
+    font-family: 'CustomFontBoldItalic', sans-serif;
+}
+
+.light {
+    font-family: 'CustomFontLight', sans-serif;
+}
+
+.semi-bold {
+    font-family: 'CustomFontSemiBold', sans-serif;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'CustomFont', sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--body-background-color);

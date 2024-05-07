@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { UitoolsService } from '../../services/uitools.service';
+import { UitoolsService } from '../../shared/services/uitools.service';
 
 @Component({
   selector: 'app-header',

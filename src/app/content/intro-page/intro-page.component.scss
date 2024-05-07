@@ -9,10 +9,7 @@
     position: absolute;
     top: 10%;
     left: 10%;
-    // transform: translateX(-50%);
-    // text-align: center;
     z-index: 10;
-    // make more space between the text letters
     letter-spacing: 0.3rem;
 }
 
@@ -34,10 +31,7 @@
     opacity: 10%;
 }
 
-// fade the container into the background
-
 .shape-container img {
-    // invert the image color
     filter: invert(1);
     height: 100%;
 }
@@ -49,10 +43,7 @@
     left: 0;
     height: 100%;
     width: 150%;
-    // bottom: 0;
-    // right: 50%; // Start from the middle of the container
-    background: linear-gradient(to right, var(--body-background-color), rgba(255, 255, 255, 0)); // Adjust the color to match your page's background color
-    // pointer-events: none; // Prevent the pseudo-element from blocking interactions
+    background: linear-gradient(to right, var(--body-background-color), rgba(255, 255, 255, 0));
 }
 
 @media screen and (min-width: 700px) {

@@ -1,5 +1,5 @@
 import { Component, ElementRef, HostListener } from '@angular/core';
-import { UitoolsService } from '../../services/uitools.service';
+import { UitoolsService } from '../../shared/services/uitools.service';
 
 @Component({
   selector: 'app-sidebar',
