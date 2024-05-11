@@ -1,14 +1,18 @@
-.experience-container {
+.education-container {
     padding: 10px;
     display: flex;
     justify-content: center;
 }
 
-.experience-card {
+.education-card {
     max-width: 600px;
     width: 100%;
 }
 
 .content-container {
     padding: 0px 0px 0px 10px;
+}
+
+.education-content p {
+    margin-left: 10px;
 }

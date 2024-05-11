@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { TypingEffectDirective } from '../../shared/directives/typingEffect';
 
 @Component({
-  selector: 'app-dev-experience',
+  selector: 'app-projects',
   standalone: true,
   imports: [TypingEffectDirective],
-  templateUrl: './dev-experience.component.html',
-  styleUrl: './dev-experience.component.scss'
+  templateUrl: './projects.component.html',
+  styleUrl: './projects.component.scss'
 })
-export class DevExperienceComponent {
+export class ProjectsComponent {
 
 }
