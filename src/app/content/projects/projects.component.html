@@ -1,4 +1,7 @@
 <div class="projects-container">
+    <!-- <div class="bg-img-container">
+        <img src="/assets/images/paper-canvas.avif" alt="">
+    </div> -->
     <div class="projects-card">
         <div class="project-header">
             <h1 typingEffect="Projects" [delayTime]="500">Projects</h1>
@@ -9,37 +12,65 @@
                 <h3>Moisture Management System for Nurseries</h3>
                 <p class="project-description">Developed an IoT-based system to monitor and manage the moisture levels of plants in nurseries using LoRa-enabled scales. The system processes raw data to calculate accurate moisture levels, which are displayed on a user-friendly frontend. Administrators can manage scale settings, group assignments, and view detailed analytics for informed decision-making.</p>
                 <ul>
-                    <li>Technologies used: Angular, InfluxDB, Redis, Grafana, CouchDB, Socket.IO.</li>
+                    <li>Technologies used: Angular, Node.js, Express, InfluxDB, Redis, Grafana, CouchDB, Socket.IO.</li>
                     <li>Engineered a data processing pipeline that aggregates and analyzes time-series data from multiple IoT devices.</li>
                     <li>Utilized Grafana for real-time data visualization, enhancing operational insights for nursery managers.</li>
                 </ul>
+                <div class="tech-icon-container">
+                    <img src="/assets/icons/angular.svg" alt="Angular">
+                    <img src="/assets/icons/nodejs.svg" alt="Node.js">
+                    <img src="/assets/icons/express.svg" alt="Express">
+                    <img src="/assets/icons/influxdb.svg" alt="Influx">
+                    <img src="/assets/icons/redis.svg" alt="Redis">
+                    <img src="/assets/icons/grafana.svg" alt="Grafana">
+                    <img src="/assets/icons/couchdb.svg" alt="CouchDB">
+                    <img src="/assets/icons/socketdotio.svg" alt="Socket.IO">
+                </div>
             </div>
             <div class="project-entry">
-                <!-- <h3>International E-Commerce Platform</h3>
-                <p class="project-description">This comprehensive e-commerce solution features dual frontends: a client-facing shop and an administrative CMS. Designed to handle global transactions, the system dynamically adjusts pricing, taxes, and shipping options based on the user's location detected via IP address. Key functionalities include role-based access control for admins, real-time currency conversion using a currency API, and integration of Stripe for payment processing.</p>
-                <ul>
-                    <li>Technologies used: Angular, Node.js, MongoDB, Redis, Docker, Stripe API.</li>
-                    <li>Implemented complex backend logic to support multi-currency transactions and user-specific pricing adjustments.</li>
-                    <li>Developed a secure, scalable microservices architecture to ensure reliable application performance across different regions.</li>
-                </ul> -->
                 <h3>International E-Commerce Client Shop</h3>
                 <p class="project-description">Developed a client-facing e-commerce shop designed to cater to a global audience. This platform dynamically adjusts product pricing and availability based on the customer's location, detected via IP address. It features real-time currency conversion and localized shipping options, enhancing the shopping experience for international customers.</p>
                 <ul>
-                    <li>Technologies used: Angular, Express, MongoDB, Redis, Angular MAterial, Tailwind, Docker.</li>
+                    <li>Technologies used: Angular, Node.js, Express, MongoDB, Redis, InfluxDB, Stripe, Docker, Angular MAterial, Tailwind.</li>
                     <li>Integrated a currency API to automatically update currency rates and pricing based on the latest exchange rates stored in Redis.</li>
                     <li>Implemented a geo-location feature to tailor content, including pricing and shipping options, to the user’s location, enhancing user engagement and satisfaction.</li>
                     <li>Used Docker to ensure a scalable and reliable deployment across various geographic regions.</li>
                 </ul>
+                <div class="tech-icon-container">
+                    <img src="/assets/icons/angular.svg" alt="Angular">
+                    <img src="/assets/icons/nodejs.svg" alt="Node.js">
+                    <img src="/assets/icons/express.svg" alt="Express">
+                    <img src="/assets/icons/mongodb.svg" alt="MongoDB">
+                    <img src="/assets/icons/redis.svg" alt="Redis">
+                    <img src="/assets/icons/influxdb.svg" alt="InfluxDB">
+                    <img src="/assets/icons/stripe.svg" alt="Stripe">
+                    <img src="/assets/icons/docker.svg" alt="Docker">
+                    <img src="/assets/icons/angularmaterial.svg" alt="Angular Material">
+                    <img src="/assets/icons/tailwindcss.svg" alt="Tailwind">
+                </div>
             </div>
             <div class="project-entry">
                 <h3>International E-Commerce Admin CMS</h3>
                 <p class="project-description">Architected an admin CMS for managing global e-commerce operations, including dynamic content management, pricing adjustments, and inventory control for different countries. The system includes role-based access controls to manage administrative privileges and security.</p>
                 <ul>
-                    <li>Technologies used: Angular, Express, MongoDB, Redis, InfluxDB, RabbitMQ, Docker, Stripe API.</li>
+                    <li>Technologies used: Angular, Node.js, Express, MongoDB, Redis, InfluxDB, RabbitMQ, Docker, Stripe API, Angular Material, Tailwind.</li>
                     <li>Developed a dynamic content management system that allows administrators to modify product details, pricing, and availability for each country.</li>
                     <li>Configured role-based access control to ensure that administrators have appropriate permissions based on their roles, increasing system security and operational efficiency.</li>
                     <li>Integrated Stripe for processing payments, with robust backend integrations to handle multi-currency transactions and financial reconciliations.</li>
                 </ul>
+                <div class="tech-icon-container">
+                    <img src="/assets/icons/angular.svg" alt="Angular">
+                    <img src="/assets/icons/nodejs.svg" alt="Node.js">
+                    <img src="/assets/icons/express.svg" alt="Express">
+                    <img src="/assets/icons/mongodb.svg" alt="MongoDB">
+                    <img src="/assets/icons/redis.svg" alt="Redis">
+                    <img src="/assets/icons/influxdb.svg" alt="InfluxDB">
+                    <img src="/assets/icons/rabbitmq.svg" alt="RabbitMQ">
+                    <img src="/assets/icons/docker.svg" alt="Docker">
+                    <img src="/assets/icons/stripe.svg" alt="Stripe">
+                    <img src="/assets/icons/angularmaterial.svg" alt="Angular Material">
+                    <img src="/assets/icons/tailwindcss.svg" alt="Tailwind">
+                </div>
             </div>
             <div class="project-entry">
                 <h3>Warehouse Management System</h3>
@@ -51,6 +82,10 @@
                     <li>Designed and implemented a database schema to store data securely and allow quick retrieval and updates of inventory and transaction records.</li>
                     <li>The project not only honed my technical skills but also highlighted the importance of software solutions in solving real-world problems, particularly in the nonprofit sector.</li>
                 </ul>
+                <div class="tech-icon-container">
+                    <img src="/assets/icons/delphi.svg" alt="Delphi">
+                    <img src="/assets/icons/firebase.svg" alt="Firebase">
+                </div>
             </div>
             <div class="project-entry">
                 <h3>Wedding Invite Management App</h3>
@@ -61,6 +96,26 @@
                     <li>Developed real-time updates and email notifications to keep the event hosts informed about guest responses.</li>
                     <li>Created a dedicated admin page for hosts to view and manage all guest responses, ensuring efficient event management and planning.</li>
                 </ul>
+                <div class="tech-icon-container">
+                    <img src="/assets/icons/angular.svg" alt="Angular">
+                    <img src="/assets/icons/firebase.svg" alt="Firebase">
+                </div>
+            </div>
+            <div class="project-entry">
+                <h3>Production Websites Development</h3>
+                <p class="project-description">Developed and launched multiple websites that are actively used in production, each featuring robust Angular frontends, Express backends, and MongoDB databases. These sites are designed to facilitate client information collection and enable seamless communication between users and administrators through automated email notifications.</p>
+                <ul>
+                    <li>Technologies used: Angular, Node.js, Express, MongoDB.</li>
+                    <li>Engineered and implemented comprehensive front-to-back architecture that handles data collection, storage, and retrieval efficiently.</li>
+                    <li>Set up automated systems for sending email alerts to admins whenever users submit their information or request contact, enhancing administrative responsiveness.</li>
+                    <li>Responsible for the full development lifecycle: designing UI/UX, developing the backend logic, performing thorough testing, and deploying the applications on remote servers.</li>
+                </ul>
+                <div class="tech-icon-container">
+                    <img src="/assets/icons/angular.svg" alt="Angular">
+                    <img src="/assets/icons/nodejs.svg" alt="Node.js">
+                    <img src="/assets/icons/express.svg" alt="Express">
+                    <img src="/assets/icons/mongodb.svg" alt="MongoDB">
+                </div>
             </div>
         </div>
     </div>
