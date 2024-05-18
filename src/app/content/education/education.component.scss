@@ -1,18 +1,105 @@
 .education-container {
-    padding: 10px;
     display: flex;
     justify-content: center;
+    margin-top: 100px;
+}
+
+.education-outer {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1650px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-img-container {
+    transition: opacity 1s ease-in-out;
+    width: fit-content;
 }
 
 .education-card {
     max-width: 600px;
     width: 100%;
+    padding: 0px 10px;
 }
 
 .content-container {
     padding: 0px 0px 0px 10px;
 }
 
+.education-content {
+    backdrop-filter: blur(2px);
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .education-content p {
     margin-left: 10px;
+}
+
+.second-bg {
+    display: none;
+}
+
+@media screen and (max-width: 1350px) {
+
+    .bg-img-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        width: 100%;
+    }
+
+    .education-outer {
+        justify-content: flex-end;
+    }
+
+    .education-card {
+        z-index: 1;
+    }
+
+    .isInView .bg-img-container {
+        // opacity: 0.4;
+    }
+    
+}
+
+@media screen and (max-width: 1240px) {
+
+    .bg-img-container::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to left, var(--body-background-color), rgba(255, 255, 255, 0));
+    }
+    
+}
+
+@media screen and (max-width: 850px) {
+
+    .bg-img-container::after {
+        width: 150%;
+    }
+    
+}
+
+@media  screen and (max-width: 634px) {
+
+    .second-bg {
+        display: block;
+    }
+
+    .bg-img-container::after {
+        display: none;
+    }
+
+    .bg-img-container {
+        opacity: 0.4;
+    }
+    
 }

@@ -1,7 +1,10 @@
-<div class="projects-container">
+<div class="projects-container" toggleInViewClass>
     <!-- <div class="bg-img-container">
         <img src="/assets/images/paper-canvas.avif" alt="">
     </div> -->
+    <div class="bg-img-container">
+        <img src="/assets/icons/lines.svg" alt="">
+    </div>
     <div class="projects-card">
         <div class="project-header">
             <h1 typingEffect="Projects" [delayTime]="500">Projects</h1>
@@ -12,9 +15,10 @@
                 <h3>Moisture Management System for Nurseries</h3>
                 <p class="project-description">Developed an IoT-based system to monitor and manage the moisture levels of plants in nurseries using LoRa-enabled scales. The system processes raw data to calculate accurate moisture levels, which are displayed on a user-friendly frontend. Administrators can manage scale settings, group assignments, and view detailed analytics for informed decision-making.</p>
                 <ul>
-                    <li>Technologies used: Angular, Node.js, Express, InfluxDB, Redis, Grafana, CouchDB, Socket.IO.</li>
+                    <li>Technologies used: Angular, Node.js, Express, InfluxDB, Redis, Grafana, CouchDB, Socket.IO, Ansible.</li>
                     <li>Engineered a data processing pipeline that aggregates and analyzes time-series data from multiple IoT devices.</li>
                     <li>Utilized Grafana for real-time data visualization, enhancing operational insights for nursery managers.</li>
+                    <li>Employed Ansible to automate environment setup, frontend compilation, and deployment, ensuring consistent and reliable deployments on OrangePi devices.</li>
                 </ul>
                 <div class="tech-icon-container">
                     <img src="/assets/icons/angular.svg" alt="Angular">
@@ -25,6 +29,7 @@
                     <img src="/assets/icons/grafana.svg" alt="Grafana">
                     <img src="/assets/icons/couchdb.svg" alt="CouchDB">
                     <img src="/assets/icons/socketdotio.svg" alt="Socket.IO">
+                    <img src="/assets/icons/ansible.svg" alt="Ansible">
                 </div>
             </div>
             <div class="project-entry">
