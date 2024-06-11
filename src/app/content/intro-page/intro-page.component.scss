@@ -28,12 +28,13 @@
     transform: translateY(-50%);
     width: fit-content;
     height: 100%;
-    opacity: 10%;
+    opacity: 25%;
 }
 
 .shape-container img {
-    filter: invert(1);
+    filter: var(--invert-on-dark);
     height: 100%;
+    animation: spin 100s linear infinite;
 }
 
 .shape-container::after {
@@ -64,9 +65,13 @@
     transition: width 0.5s, height 0.5s, opacity 0.5s;
 }
 
+.icon-container:hover {
+    color: green;
+}
+
 .isInView .icon-container {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     opacity: 1;
 }
 
@@ -79,7 +84,18 @@
     opacity: 0.5;
 }
 
+.icon-container svg {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    // invert color
+    // filter: invert(1);
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
 @media screen and (min-width: 700px) {
+
     .shape-container {
         left: 40%;
     }
@@ -104,4 +120,9 @@
         right: -20%;
     }
     
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

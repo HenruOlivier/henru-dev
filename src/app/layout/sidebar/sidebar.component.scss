@@ -34,13 +34,17 @@
 }
 
 .image-container {
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    overflow: hidden;
+    // border-radius: 50%;
+    // height: 50px;
+    // width: 50px;
+    // overflow: hidden;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    filter: var(--invert-on-dark);
 }
 
 .image-container img {
@@ -129,7 +133,7 @@
     cursor: pointer;
     
     label {
-        background-color: rgba(255, 255, 255, 0) !important;
+        // background-color: rgba(255, 255, 255, 0) !important;
     }
 }
 

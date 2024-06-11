@@ -4,12 +4,11 @@ import { DevExperienceComponent } from '../dev-experience/dev-experience.compone
 import { EducationComponent } from '../education/education.component';
 import { TechnologiesComponent } from '../technologies/technologies.component';
 import { ProjectsComponent } from '../projects/projects.component';
-import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-content-outlet',
   standalone: true,
-  imports: [IntroPageComponent, DevExperienceComponent, EducationComponent, TechnologiesComponent, ProjectsComponent, FooterComponent],
+  imports: [IntroPageComponent, DevExperienceComponent, EducationComponent, TechnologiesComponent, ProjectsComponent],
   templateUrl: './content-outlet.component.html',
   styleUrl: './content-outlet.component.scss'
 })

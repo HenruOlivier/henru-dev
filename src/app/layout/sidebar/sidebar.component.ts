@@ -16,9 +16,7 @@ export class SidebarComponent {
 
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent) {
-    console.log('click');
-    if (!this.eRef.nativeElement.contains(event.target)) {
-      console.log('click outside');
+    if (this.eRef.nativeElement.contains(event.target)) {
       this.onClosedSidebar();
     }
   }

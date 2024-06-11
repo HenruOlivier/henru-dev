@@ -1,5 +1,9 @@
+.experience-section {
+    // padding: 110px 10px 10px 10px;
+    padding-top: 110px;
+}
+
 .experience-container {
-    padding: 10px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -28,6 +32,7 @@
     max-width: 600px;
     width: 100%;
     z-index: 1;
+    padding: 10px;
 }
 
 .content-container {
@@ -41,5 +46,5 @@
 }
 
 .isInView .bg-img-container {
-    opacity: 0.4;
+    opacity: var(--main-graphic-opacity);
 }

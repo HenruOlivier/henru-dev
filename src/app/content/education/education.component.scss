@@ -1,7 +1,10 @@
+.education-section {
+    padding-top: 110px;
+}
+
 .education-container {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
 }
 
 .education-outer {
@@ -74,7 +77,7 @@
         top: 0;
         right: 0;
         height: 100%;
-        width: 100%;
+        width: var(--first-education-graphic-width);
         background: linear-gradient(to left, var(--body-background-color), rgba(255, 255, 255, 0));
     }
     
@@ -83,7 +86,7 @@
 @media screen and (max-width: 850px) {
 
     .bg-img-container::after {
-        width: 150%;
+        width: var(--second-education-graphic-width);
     }
     
 }
@@ -99,7 +102,7 @@
     }
 
     .bg-img-container {
-        opacity: 0.4;
+        opacity: var(--main-graphic-opacity);
     }
     
 }

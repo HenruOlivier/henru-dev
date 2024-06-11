@@ -7,7 +7,7 @@
     --primary: hsl(216, 74%, 53%);
     --primary-disabled: hsl(216, 47%, 37%);
 
-    --primary-card: rgb(57, 67, 70);
+    --primary-card: rgb(200, 221, 226);
 
     --secondary: hsl(0, 0%, 50%);
     --secondary-disabled: hsl(217, 4%, 62%);
@@ -26,22 +26,23 @@
     --muted-color-3: hsl(0, 0%, 50%);
 
     //Header Background Color
-    --header-background-color: hsl(228, 33%, 97%);
+    --header-background-color: hsl(173, 13%, 86%);
 
     //Body Background Color
-    --body-background-color: hsl(228, 33%, 97%);
+    // --body-background-color: hsl(168, 36%, 81%);
+    --body-background-color: hsl(163, 12%, 89%);
 
     //Sidebar Background Color
-    --sidebar-background-color: hsl(228, 33%, 97%);
+    --sidebar-background-color: hsl(173, 13%, 86%);
     --sidebar-border-color: #cbcccf;
 
     //Footer Background Color
-    --footer-background-color: hsl(0, 0%, 100%);
+    --footer-background-color: hsl(173, 13%, 86%);
 
     --theme-content-color: hsl(0, 0%, 100%);
 
     //Active Colors
-    --active-text-color: hsl(25, 45%, 54%);
+    --active-text-color: hsl(212, 97%, 26%);
     --active-background-color: hsl(25, 47%, 94%);
 
     //Accent Color
@@ -95,6 +96,18 @@
     //Multi Select
     --multi-select-hover-bg: hsla(216, 7%, 27%, 0.158);
 
+    // invert
+    --invert-on-dark: invert(0);
+
+    // opacity
+    --main-graphic-opacity: 0.1;
+    --lighter-graphic-opacity: 0.1;
+    --light-graphic-opacity: 0.1;
+
+    // width
+    --first-education-graphic-width: 500%;
+    --second-education-graphic-width: 700%;
+
 }
 
 .dark-mode {
@@ -141,7 +154,7 @@
     --theme-content-color: hsl(233, 7%, 22%);
 
     //Active Colors
-    --active-text-color: hsla(25, 100%, 81%, 0.9);
+    --active-text-color: hsl(201, 100%, 87%);
     --active-background-color: hsla(25, 50%, 50%, 0.3);
 
     //Accent Color
@@ -193,6 +206,18 @@
 
     //Multi Select
     --multi-select-hover-bg: hsla(204, 31%, 62%, 0.226);
+
+    // invert
+    --invert-on-dark: invert(1);
+
+    // opacity
+    --main-graphic-opacity: 0.4;
+    --lighter-graphic-opacity: 0.3;
+    --light-graphic-opacity: 0.15;
+
+    // width
+    --first-education-graphic-width: 100%;
+    --second-education-graphic-width: 150%;
 
 }
 
