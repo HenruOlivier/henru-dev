@@ -12,4 +12,15 @@ import { ToggleInViewDirective } from '../../shared/directives/toggleInViewClass
 })
 export class IntroPageComponent {
 
+  copyNumber() {
+    const phoneNumber = '+27 82 828 9723';
+    navigator.clipboard.writeText(phoneNumber)
+        .then(() => {
+            console.log('Phone number copied to clipboard');
+        })
+        .catch(err => {
+            console.error('Could not copy phone number: ', err);
+        });
+  }
+
 }

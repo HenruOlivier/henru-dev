@@ -1,5 +1,5 @@
 .projects-section {
-    padding-top: 110px;
+    padding-top: 220px;
 }
 
 .projects-container {
@@ -14,7 +14,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 1;
+    opacity: var(--starting-bg-opacity);
     transition: opacity 1s ease-in-out;
     // filter: invert(1); 
     z-index: 0;
@@ -56,6 +56,7 @@
     max-width: 600px;
     backdrop-filter: blur(5px);
     border-radius: 10px;
+    padding: 0px 10px;
 }
 
 .project-header p {
@@ -64,8 +65,8 @@
 
 .project-entry {
     border-radius: 15px;
-    max-width: 400px;
-    width: 410px;
+    max-width: 100%;
+    width: 400px;
     background-color: var(--primary-card);
     box-shadow: var(--main-box-shadow);
     padding: 10px;
@@ -86,6 +87,6 @@
     border-left: 1px solid var(--text-color);
 }
 
-.isInView .bg-img-container {
+.isInView.bg-img-container {
     opacity: var(--main-graphic-opacity);
 }

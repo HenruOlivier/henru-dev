@@ -51,36 +51,24 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    opacity: 0.8;
 }
 
 .sidebar-profile {
     height: 200px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-
     overflow: hidden;
-    white-space: normal;
-    word-wrap: break-word;
-
-    label {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
+    margin: 50px 20px 0px 20px;
+    border-bottom: 1px solid var(--sidebar-border-color);
     img {
-        height: 80px;
-        width: 80px;
+        height: 110px;
+        width: 110px;
         border-radius: 50%;
         object-fit: cover;
-    }
-
-    ss-img{
-        height: 80px;
-        width: 80px;
-        border-radius: 50%;
-        object-fit: cover;
+        // filter: var(--invert-on-dark);
+        background-color: rgba(255, 255, 255, 0.486);
     }
 }
 
@@ -97,43 +85,47 @@
     display: flex;
     flex-direction: column;
     flex: 1;
+    margin-top: 15px;
 
     overflow-y: auto;
 
-    .bi {
-        margin-right: 10px;
-    }
-
-    .active {
-        background-color: var(--active-background-color);
-        color: var(--active-text-color);
+    a {
+        text-decoration: none;
+        color: var(--text-color);
+        height: 40px;
+        border-radius: 10px;
+        margin: 0px 10px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
     }
 
     & :hover {
-        i {
-            background-color: transparent;
-        }
-
-        background-color: var(--active-background-color);
+        background-color: var(--primary-card);
         color: var(--active-text-color);
     }
 }
 
-.sidebar-menu-item {
+.theme-toggler {
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 12px;
     height: 50px;
-    min-height: 50px;
     display: flex;
     align-items: center;
     padding-left: 15px;
     transition: background-color 0.15s, color 0.15s;
     transition-timing-function: ease-in-out;
     cursor: pointer;
-    
+    border: 1px solid var(--sidebar-border-color);
+
+    &:hover {
+        background-color: var(--primary-card);
+        color: var(--active-text-color);
+    }
+
     label {
-        // background-color: rgba(255, 255, 255, 0) !important;
+        cursor: pointer;
     }
 }
 
