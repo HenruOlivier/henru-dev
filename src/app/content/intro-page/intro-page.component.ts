@@ -23,4 +23,8 @@ export class IntroPageComponent {
         });
   }
 
+  onCvClick() {
+    window.open('/assets/HenruOlivier-CV.pdf', '_blank');
+  }
+
 }
