@@ -21,7 +21,7 @@ export class FooterComponent {
   }
 
   onCvClick() {
-    window.open('/assets/HenruOlivier-CV.pdf', '_blank');
+    window.open('assets/HenruOlivier-CV.pdf', '_blank');
   }
 
 }
