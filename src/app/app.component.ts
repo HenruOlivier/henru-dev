@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './layout/header/header.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
@@ -14,8 +14,23 @@ import { FooterComponent } from './layout/footer/footer.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-
+  
   constructor(public uiToolsService: UitoolsService) {}
+  
+  @HostListener('window:resize')
+  onResize() {
+    this.setViewportHeight();
+  }
+
+  ngOnInit() {
+    this.setViewportHeight();
+  }
+
+  setViewportHeight() {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+
 
   title = 'henru-dev';
 }
