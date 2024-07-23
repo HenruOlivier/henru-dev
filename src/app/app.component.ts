@@ -16,13 +16,15 @@ import { FooterComponent } from './layout/footer/footer.component';
 export class AppComponent {
 
   constructor(public uiToolsService: UitoolsService) {
+  }
+
+  ngOnInit() {
     this.updateViewportHeight();
   }
 
   @HostListener('window:resize')
   @HostListener('window:orientationchange')
   updateViewportHeight() {
-    // Get the viewport height and set it as a CSS variable
     const vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
   }

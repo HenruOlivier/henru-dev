@@ -89,7 +89,7 @@
 
 .app-container {
     width: 100%;
-    min-height: calc(var(--vh, 1vh) * 100);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     margin: 0px;
@@ -118,6 +118,7 @@
     transition: all 0.5s ease;
     width: 100%;
     background-color: var(--body-background-color);
+    flex: 1 0 auto;
 }
 
 .open.content {
