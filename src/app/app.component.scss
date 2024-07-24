@@ -87,6 +87,7 @@
 //     }
 // }
 
+
 .app-container {
     width: 100%;
     min-height: 100vh;
@@ -132,7 +133,17 @@
     background-color: var(--body-background-color);
     overflow-y: auto;
     overflow-x: hidden;
+    height: calc(var(--vh, 1vh) * 100 - 50px); // Adjust dynamically if necessary
 }
+
+// .body {
+//     margin-top: 50px;
+//     flex: 1 1 auto;
+//     width: 100%;
+//     background-color: var(--body-background-color);
+//     overflow-y: auto;
+//     overflow-x: hidden;
+// }
 
 .footer {
     width: 100%;
