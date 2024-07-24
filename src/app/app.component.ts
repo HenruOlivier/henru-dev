@@ -19,15 +19,15 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    this.updateViewportHeight();
+    // this.updateViewportHeight();
   }
 
-  @HostListener('window:resize')
-  @HostListener('window:orientationchange')
-  updateViewportHeight() {
-    const vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }
+  // @HostListener('window:resize')
+  // @HostListener('window:orientationchange')
+  // updateViewportHeight() {
+  //   const vh = window.innerHeight * 0.01;
+  //   document.documentElement.style.setProperty('--vh', `${vh}px`);
+  // }
 
   title = 'henru-dev';
 }

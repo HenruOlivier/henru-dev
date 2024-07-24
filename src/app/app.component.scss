@@ -89,12 +89,11 @@
 
 
 .app-container {
-    width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    margin: 0px;
-    padding: 0px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
     background-color: var(--body-background-color);
 }
 
@@ -114,11 +113,9 @@
 
 .content {
     display: flex;
-    flex-direction: column;
-    transition: all 0.5s ease;
+    flex: 1;
     width: 100%;
     background-color: var(--body-background-color);
-    flex: 1 0 auto;
 }
 
 .open.content {
@@ -127,23 +124,13 @@
 }
 
 .body {
-    margin-top: 50px;
+    margin-top: 50px; /* Adjust to match header height */
     flex: 1 1 auto;
     width: 100%;
-    background-color: var(--body-background-color);
     overflow-y: auto;
     overflow-x: hidden;
-    height: calc(var(--vh, 1vh) * 100 - 50px); // Adjust dynamically if necessary
+    background-color: var(--body-background-color);
 }
-
-// .body {
-//     margin-top: 50px;
-//     flex: 1 1 auto;
-//     width: 100%;
-//     background-color: var(--body-background-color);
-//     overflow-y: auto;
-//     overflow-x: hidden;
-// }
 
 .footer {
     width: 100%;
