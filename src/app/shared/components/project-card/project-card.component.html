@@ -1,28 +1,30 @@
-<div class="project-entry">
+<!-- <div class="project-entry">
     <h3>{{heading}}</h3>
     <p class="project-description">{{description}}</p>
-    <ul class="project-bullets">
-        <!-- <li>Technologies used: Angular, Node.js, Express, MongoDB, Redis, InfluxDB, Stripe, Docker, Angular MAterial, Tailwind.</li>
-        <li>Integrated a currency API to automatically update currency rates and pricing based on the latest exchange rates stored in Redis.</li>
-        <li>Implemented a geo-location feature to tailor content, including pricing and shipping options, to the user’s location, enhancing user engagement and satisfaction.</li>
-        <li>Used Docker to ensure a scalable and reliable deployment across various geographic regions.</li> -->
-        <li *ngFor="let item of bullets">
+    <ul class="project-bulletPoints">
+        <li *ngFor="let item of bulletPoints">
             {{item}}
         </li>
     </ul>
     <div class="tech-icon-container">
-        <!-- <img src="assets/icons/angular.svg" alt="Angular">
-        <img src="assets/icons/nodejs.svg" alt="Node.js">
-        <img src="assets/icons/express.svg" alt="Express">
-        <img src="assets/icons/mongodb.svg" alt="MongoDB">
-        <img src="assets/icons/redis.svg" alt="Redis">
-        <img src="assets/icons/influxdb.svg" alt="InfluxDB">
-        <img src="assets/icons/stripe.svg" alt="Stripe">
-        <img src="assets/icons/docker.svg" alt="Docker">
-        <img src="assets/icons/angularmaterial.svg" alt="Angular Material">
-        <img src="assets/icons/tailwindcss.svg" alt="Tailwind"> -->
         <ng-container *ngFor="let icon of icons">
             <img src="{{icon.src}}" alt="{{icon.alt}}">
         </ng-container>
     </div>
+</div> -->
+
+<div class="project-entry" [ngClass]="{'expanded': isExpanded}" [style.max-height]="isExpanded ? 'none' : '400px'">
+    <h3>{{heading}}</h3>
+    <p class="project-description">{{description}}</p>
+    <ul class="project-bulletPoints">
+        <li *ngFor="let item of bulletPoints">
+            {{item}}
+        </li>
+    </ul>
+    <div class="tech-icon-container">
+        <ng-container *ngFor="let icon of icons">
+            <img src="{{icon.src}}" alt="{{icon.alt}}">
+        </ng-container>
+    </div>
+    <button class="toggle-expand-btn" (click)="toggleExpand()">{{isExpanded ? 'Show Less' : 'Show More'}}</button>
 </div>
