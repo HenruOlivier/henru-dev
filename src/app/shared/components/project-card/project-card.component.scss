@@ -1,43 +1,3 @@
-.projects-section {
-    padding-top: 220px;
-}
-
-.projects-container {
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.bg-img-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: var(--starting-bg-opacity);
-    transition: opacity 1s ease-in-out;
-    // filter: invert(1); 
-    z-index: 0;
-    overflow: hidden;
-}
-
-.bg-img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-// .projects-container {
-//     padding: 10px;
-//     display: flex;
-//     justify-content: center;
-//     background: url('/assets/images/paper-canvas.avif') no-repeat center center fixed; 
-//     -webkit-background-size: cover;
-//     -moz-background-size: cover;
-//     -o-background-size: cover;
-//     background-size: cover;
-// }
-
 .projects-card {
     width: 100%;
     z-index: 1;
@@ -66,8 +26,8 @@
 
 .project-entry {
     border-radius: 15px;
-    max-width: 100%;
-    width: 400px;
+    max-width: 400px;
+    // width: 400px;
     background-color: var(--primary-card);
     box-shadow: var(--main-box-shadow);
     // padding: 10px;
