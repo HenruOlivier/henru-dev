@@ -41,6 +41,7 @@
     position: relative;
     border-radius: 15px;
     max-width: 400px;
+    max-height: 400px;
     background-color: var(--primary-card);
     box-shadow: var(--main-box-shadow);
     margin: 10px;
@@ -48,12 +49,13 @@
     justify-content: space-between;
     flex-direction: column;
     overflow: hidden;
-    // transition: max-height 0.3s ease;
+    transition: max-height 0.3s ease;
+    padding-bottom: 50px;
 }
 
 .project-entry.expanded {
-    max-height: none;
-    padding-bottom: 50px;
+    max-height: 1000px;
+    // padding-bottom: 50px;
 }
 
 // .toggle-expand-btn {
