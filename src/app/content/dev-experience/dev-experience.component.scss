@@ -29,7 +29,7 @@
 }
 
 .experience-card {
-    max-width: 600px;
+    max-width: 900px;
     width: 100%;
     z-index: 1;
     padding: 10px;
@@ -47,4 +47,16 @@
 
 .isInView .bg-img-container {
     opacity: var(--main-graphic-opacity);
+}
+
+.experience-list {
+    padding-inline-start: 30px;
+}
+
+.experience-list li {
+    padding: 5px 0px;
+}
+
+.bullet-heading {
+    font-weight: 600;
 }
