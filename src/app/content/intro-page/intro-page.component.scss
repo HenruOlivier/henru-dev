@@ -89,6 +89,31 @@
     transition: width 0.5s ease 20s, height 0.5s ease 20s, opacity 0.3s ease, transform 0.3s ease;
 }
 
+.phone-icon {
+    position: relative;
+}
+
+.phone-icon::after {
+    content: 'Number copied!';
+    position: absolute;
+    top: -10px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(0%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease, top 0.3s ease;
+    white-space: nowrap;
+}
+
+.phone-icon.copied::after {
+    opacity: 1;
+    top: -20px;
+}
+
 @media screen and (min-width: 700px) {
 
     .shape-container {
@@ -100,7 +125,16 @@
         // top: 250px;
         bottom: 60px;
     }
-    
+
+    .phone-icon::after {
+        left: 50%;
+        transform: translateX(-50%);
+        top: -20px;
+    }
+
+    .phone-icon.copied::after {
+        top: -30px;
+    }
     
 }
 
