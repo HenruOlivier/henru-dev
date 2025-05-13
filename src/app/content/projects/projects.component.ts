@@ -142,7 +142,7 @@ export class ProjectsComponent {
         {src: "assets/icons/python.svg", alt: "Python"},
         {src: "assets/icons/openai.svg", alt: "OpenAI"},
         {src: "assets/icons/langchain.svg", alt: "LangChain"},
-        {src: "assets/icons/faiss.svg", alt: "FAISS"},
+        {src: "assets/icons/meta.svg", alt: "FAISS"},
         {src: "assets/icons/pinecone.svg", alt: "Pinecone"},
         {src: "assets/icons/chroma.svg", alt: "Chroma"},
         {src: "assets/icons/twilio.svg", alt: "Twilio"},
